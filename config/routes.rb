@@ -1,4 +1,10 @@
 SampleApp::Application.routes.draw do
+  get "pages/home"
+#match "/static_pages/home" => "static_pages#home", :via => :get
+  get "pages/contact"
+
+  get "pages/about"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
